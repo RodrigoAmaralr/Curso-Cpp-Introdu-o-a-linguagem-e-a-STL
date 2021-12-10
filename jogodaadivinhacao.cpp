@@ -1,9 +1,12 @@
 #include <iostream>
 
-using namespace std;
+using namespace std;    //o marcador de uso das funções padrão de C++
 
 int main(){
-    std::cout << "*************************************" << std::endl;
+    cout << "*************************************" << endl;
     cout << "* Bem-Vindos ao jogo da adivinhacao *" << endl;
     cout << "*************************************" << endl;
+
+    int numero_secreto = 42;
+    cout << "O numero sereto e: " << numero_secreto << endl;
 }
