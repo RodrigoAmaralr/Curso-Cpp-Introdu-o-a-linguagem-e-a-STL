@@ -1,6 +1,7 @@
 // c++ jogodaadivinhacao.cpp -o prog ; ./prog
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;    //o marcador de uso das funções padrão de C++
 
@@ -24,7 +25,8 @@ int main(){
     else 
         numero_de_tentativas = 5;
 
-    const int NUMERO_SECRETO = rand();
+    srand(time(0));
+    const int NUMERO_SECRETO = rand() % 100;
 
     bool nao_acertou = true;
     int tentativas = 0;
